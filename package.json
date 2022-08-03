@@ -7,10 +7,10 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.19"
+    "express": "^4.18.1"
   },
   "devDependencies": {
+    "nodemon": "^2.0.19",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
