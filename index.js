@@ -6,12 +6,13 @@ const server = express();
 // Route params = /curso/2
 // Request params = {nome: 'NodeJS', tipo: 'Backend'}
 
-//localhost:3000/curso
-server.get('/curso/:id', (req, res) => {
-  const nome = req.query.nome;
-  const id = req.params.id;
+const cursos = ['Node JS', 'Javascript', 'react', 'react native'];
 
-  return res.json({ msg: `Hello ${nome} - curso ${id}` });
+//localhost:3000/curso
+server.get('/curso/:index', (req, res) => {
+  const { index } = req.params;
+
+  return res.json(cursos[index]);
 });
 
 server.listen(3333);
